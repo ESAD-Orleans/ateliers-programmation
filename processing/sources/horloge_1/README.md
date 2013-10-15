@@ -17,7 +17,7 @@ Horloge 1
 - *size*
 - *background*
 - *width* & *height*
-- *float* (variables)
+- *float* (variables, nombres)
 - *=* (association)
 - *translate*
 - *rotate*
