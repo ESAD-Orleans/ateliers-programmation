@@ -16,20 +16,32 @@ void setup(){
 void draw(){
   // rafraichissement du dessin
   background(255);
+  
+  // centre l'origine du dessin
   translate(width/2,height/2);
-  
+  //
+  // dessine le cadran
   ellipse(0,0,diametre_cadran,diametre_cadran);
-  
+  //
   pushMatrix();
+  //
+  //
+  // dessine les secondes
   rotate(second()*PI/30);
   line(0,-taille_aiguille_seconde,0,0);
+  //
   popMatrix();
-  
+  //
   pushMatrix();
+  //
+  //
+  // dessine les minutes
   rotate(minute()*PI/30);
   line(0,-taille_aiguille_minute,0,0);
+  //
   popMatrix();
-  
+  //
+  // dessine les secondes
   rotate(hour()*PI/6);
   line(0,-taille_aiguille_heure,0,0);
 }
