@@ -7,7 +7,11 @@ Horloge 1
 - dessin basique *processing static mode*
 - dessin animé
 - principe de paramètres
+- orientation du plan, abscisse/ordonnées x/y
 - transformations de dessin
+- [CamelCase](http://fr.wikipedia.org/wiki/CamelCase) 
+
+![CamelCase](http://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/CamelCase.svg/250px-CamelCase.svg.png)
 
 ## mots-clés Processing
 
