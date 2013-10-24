@@ -47,7 +47,7 @@ il existe également des éditeurs web spécialisés — comme Dreamweaver — q
 
 #### Un nouveau fichier HTML
 nous allons créer un nouveau fichier HTML dans Dreamweaver. 
-![Nouveau Fichier HTML5](new_html5.png)
+![Nouveau Fichier HTML5](img/new_html5.png)
 ```ATTENTION : on choisit bien HTML5.```
 HTML5 C’est la nouvelle norme de document. les anciennes normes étaient *XHTML* et *HTML4*. HTML5 est encore un *Editor's Draft* selon les spécifications de la [W3C](http://www.w3.org/html/wg/drafts/html/master/).
 
@@ -66,9 +66,9 @@ le code généré automatiquement par Dreamweaver est le code minimum valide pou
     </html>
 
 quand on ouvre le fichier dans un navigateur, on voit un fichier vide — blanc. Depuis le navigateur on peut aussi afficher le code source HTML depuis le menu, et voir le code original.
-![browser nouveau fichier](browser_new_html5.png)
+![browser nouveau fichier](img/browser_new_html5.png)
 on peut voir la source HTML de toutes les pages web
-![browser source](browser_source.png)
+![browser source](img/browser_source.png)
 
 #### Les espaces, tabulation et retours à la ligne
 le HTML est insensible au espaces multiples, tabulations et retours à la ligne. 
@@ -180,12 +180,12 @@ c’est la balise d’encodage. une chose un peu compliqué, mais qui sert à d�
 ###### \<title>\</title>
 c’est la balise de titre. Le titre d'un document HTML est très important, même si à la base, il est visiblement peu présent. le code suivant `<title>Mon exercice</title>`
 
-![title_tag.png](title_tag.png) 
+![title_tag.png](img/title_tag.png) 
 
 s’affiche dans l’onglet ou le titre de la fenêtre. 
 Il a une grande importance sémantique, puisque par exemple, c'est lui que **référence google**
 
-![title google](title_google.png)
+![title google](img/title_google.png)
 
 ici en bleu souligné.
 
@@ -447,7 +447,7 @@ le type `JPG` ou `JPEG` est le format d’image adapté aux images photographiqu
 le type `PNG`
 
 
-![x](img-fail.gif) 
+![x](img/img-fail.gif) 
 ## Ressources
 - [le site du zéro](http://lesiteduzero.com) tutoriels, astuces, entraide
 - [alsacréation](http://www.alsacreations.com/) tutoriels, astuces, entraide
