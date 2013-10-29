@@ -83,16 +83,48 @@ le SVG a un
 
 sur internet, une des problématiques récurrente est celle du poids des fichiers. Les images sont des fichiers qui sont assez lourds, surtout quand ils sont nombreux. Il faudra veiller à optimiser ses images afin d’avoir une page assez rapide à charger, et concevoir des pages économes en ressources. Le temps de chargement est un facteur déterminant dans la poursuite — ou non — d’une navigation sur un site. 
 
-taille du fichier |  correspond à |
-:---------------- |
- < 10ko | très léger, icône. 
- de 10ko à 20ko | léger, miniature de galerie
- de 20ko à 40ko | moyen, grande miniature
- de 40ko à 100ko | moyen, visuel avec détail
- de 100ko à 200ko | grande image
- de 200ko à 500ko | grande image, complexe, transparence
- de 500ko à 1Mo | très grande image. (déconseillé)
- + de 1Mo | image mal compressée (déconseillé)
+<table>
+<thead>
+<tr>
+<th align="left">taille du fichier </th>
+<th>  correspond à </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">&lt; 10ko </td>
+<td> très léger, icône.</td>
+</tr>
+<tr>
+<td align="left">de 10ko à 20ko </td>
+<td> léger, miniature de galerie</td>
+</tr>
+<tr>
+<td align="left">de 20ko à 40ko </td>
+<td> moyen, grande miniature</td>
+</tr>
+<tr>
+<td align="left">de 40ko à 100ko </td>
+<td> moyen, visuel avec détail</td>
+</tr>
+<tr>
+<td align="left">de 100ko à 200ko </td>
+<td> grande image</td>
+</tr>
+<tr>
+<td align="left">de 200ko à 500ko </td>
+<td> grande image, complexe, transparence</td>
+</tr>
+<tr>
+<td align="left">de 500ko à 1Mo </td>
+<td> très grande image. (déconseillé)</td>
+</tr>
+<tr>
+<td align="left">+ de 1Mo </td>
+<td> image mal compressée (déconseillé)</td>
+</tr>
+</tbody>
+</table>
  
 Globalement, plus une page comportera d’images (lourdes) plus elle sera longue à charger, ce qui n’est pas très *user-friendly*. 
 le temps de téléchargement moyen d’un débit ADSL est de 80ko/s. donc pour charger 800ko, ça prend 10 secondes. c’est long. 
@@ -101,25 +133,175 @@ le temps de téléchargement moyen d’un débit ADSL est de 80ko/s. donc pour c
 
 une petite grille pour vous aider à choisir votre type de fichier
 
-Format 	        | JPG | PNG-24 | PNG-8 | GIF | SVG | ko 
-:-------------- | 
- compatibilité | - | IE7 | - | - | IE9 | -
- bitmap   | X | X | X | X |  | - 
- vectoriel   |   |  |  |  | X | -
- forte compression | X |  | X | X |  | -
- faible compression | X | X | | | | -
- sans perte |  | X |  |  |   | -
- grande image | X | X |  |  |  | 100 ko
- très grande image | X |  |  |  | | 300 ko
- photographie   | X |  |  |  |  | - 
- icône   |   | X | X | X |  | 10 ko
- typographie   |   | X | X | X | X | -
- flat design   |   | X | X | X | X | -
- transparence   |   | X | X | X | X | -
- sur 255 niveaux   |   | X |  | | | -
- palette réduite de couleurs | | X | X | X | | -
- contenus variés | X | X |  |  |  | 150 ko
- animation | |   |   | X | | - |
+<table>
+<thead>
+<tr>
+<th align="left">Format          </th>
+<th> JPG </th>
+<th> PNG-24 </th>
+<th> PNG-8 </th>
+<th> GIF </th>
+<th> SVG </th>
+<th> ko</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">compatibilité </td>
+<td> - </td>
+<td> IE7 </td>
+<td> - </td>
+<td> - </td>
+<td> IE9 </td>
+<td> -</td>
+</tr>
+<tr>
+<td align="left">bitmap   </td>
+<td> X </td>
+<td> X </td>
+<td> X </td>
+<td> X </td>
+<td>  </td>
+<td> -</td>
+</tr>
+<tr>
+<td align="left">vectoriel   </td>
+<td>   </td>
+<td>  </td>
+<td>  </td>
+<td>  </td>
+<td> X </td>
+<td> -</td>
+</tr>
+<tr>
+<td align="left">forte compression </td>
+<td> X </td>
+<td>  </td>
+<td> X </td>
+<td> X </td>
+<td>  </td>
+<td> -</td>
+</tr>
+<tr>
+<td align="left">faible compression </td>
+<td> X </td>
+<td> X </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> -</td>
+</tr>
+<tr>
+<td align="left">sans perte </td>
+<td>  </td>
+<td> X </td>
+<td>  </td>
+<td>  </td>
+<td>   </td>
+<td> -</td>
+</tr>
+<tr>
+<td align="left">grande image </td>
+<td> X </td>
+<td> X </td>
+<td>  </td>
+<td>  </td>
+<td>  </td>
+<td> 100 ko</td>
+</tr>
+<tr>
+<td align="left">très grande image </td>
+<td> X </td>
+<td>  </td>
+<td>  </td>
+<td>  </td>
+<td> </td>
+<td> 300 ko</td>
+</tr>
+<tr>
+<td align="left">photographie   </td>
+<td> X </td>
+<td>  </td>
+<td>  </td>
+<td>  </td>
+<td>  </td>
+<td> -</td>
+</tr>
+<tr>
+<td align="left">icône   </td>
+<td>   </td>
+<td> X </td>
+<td> X </td>
+<td> X </td>
+<td>  </td>
+<td> 10 ko</td>
+</tr>
+<tr>
+<td align="left">typographie   </td>
+<td>   </td>
+<td> X </td>
+<td> X </td>
+<td> X </td>
+<td> X </td>
+<td> -</td>
+</tr>
+<tr>
+<td align="left">flat design   </td>
+<td>   </td>
+<td> X </td>
+<td> X </td>
+<td> X </td>
+<td> X </td>
+<td> -</td>
+</tr>
+<tr>
+<td align="left">transparence   </td>
+<td>   </td>
+<td> X </td>
+<td> X </td>
+<td> X </td>
+<td> X </td>
+<td> -</td>
+</tr>
+<tr>
+<td align="left">sur 255 niveaux   </td>
+<td>   </td>
+<td> X </td>
+<td>  </td>
+<td> </td>
+<td> </td>
+<td> -</td>
+</tr>
+<tr>
+<td align="left">palette réduite de couleurs </td>
+<td> </td>
+<td> X </td>
+<td> X </td>
+<td> X </td>
+<td> </td>
+<td> -</td>
+</tr>
+<tr>
+<td align="left">contenus variés </td>
+<td> X </td>
+<td> X </td>
+<td>  </td>
+<td>  </td>
+<td>  </td>
+<td> 150 ko</td>
+</tr>
+<tr>
+<td align="left">animation </td>
+<td> </td>
+<td>   </td>
+<td>   </td>
+<td> X </td>
+<td> </td>
+<td> - </td>
+</tr>
+</tbody>
+</table>
+
  
 
  
