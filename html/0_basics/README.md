@@ -429,7 +429,7 @@ on peut insérer des images avec la balise orpheline `img`. on précisera l’UR
 
 	<img src="mon_image.jpg" />
 	
-les navigateurs supportent à l’heure actuelle trois types d’images : `gif`,`jpg`,`png`. Chaque format a son rôle et son utilité. 
+les navigateurs supportent à l’heure actuelle trois types d’images : `gif`,`jpg`,`png`. on peut aussi utiliser, dans certaines condition, le format vectoriel `svg`. Chaque format a son rôle et son utilité. 
 l’attribut src supporte les URL absolue et relative, qui marche de la même manière que les liens. Ainsi, je peux écrire :
 	
 	<img src="../un_dossier_image/une_image.png" />
@@ -438,16 +438,12 @@ l’attribut src supporte les URL absolue et relative, qui marche de la même ma
 	
 si les URL de vos images sont cassées. un petit symbole apparaitra dans votre navigateur. 
 
-###### jpg
-
-le type `JPG` ou `JPEG` est le format d’image adapté aux images photographiques, ou complexes. 
-
-###### png
-
-le type `PNG`
-
 
 ![x](img/img-fail.gif) 
+
+pour plus d’information sur les images pour le web, voir l’article dédié « [Travailler avec des images pour le web](../images_pour_le_web) ». 
+
+
 ## Ressources
 - [le site du zéro](http://lesiteduzero.com) tutoriels, astuces, entraide
 - [alsacréation](http://www.alsacreations.com/) tutoriels, astuces, entraide
