@@ -441,7 +441,7 @@ si les URL de vos images sont cassées. un petit symbole apparaitra dans votre n
 
 ![x](img/img-fail.gif) 
 
-pour plus d’information sur les images pour le web, voir l’article dédié « [Travailler avec des images pour le web](../images_pour_le_web) ». 
+pour plus d’information sur les images pour le web, voir l’article dédié « [Travailler avec des images pour le web](https://github.com/ESAD-Orleans/ateliers-programmation/tree/master/html/1_images) ». 
 
 
 ## Ressources
