@@ -235,7 +235,7 @@ on peut aller plus loin
 	*/
 	
 ```
-il est aussi possible d’agglutiner des class sur une seule balise 
+il est aussi possible d’agglutiner des classes sur une seule balise 
 
 ```
 	.grand{
@@ -265,6 +265,24 @@ il est aussi possible d’agglutiner des class sur une seule balise
 		</span>		
 	*/
 	
+```
+### selection multiple
+on peut cibler plusieurs selecteur et leur appliquer un même style, en les séparants par des `,` (virgules). 
+
+```
+	a, strong, .important{
+		font-weight:bold;
+		color:red;
+	}
+	
+	/* 
+	
+		<a href="#">un lien</a>
+		<strong>fort</strong>
+		<span class="important">et important</span>
+	
+	*/
+
 ```
 
 
