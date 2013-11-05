@@ -17,11 +17,11 @@ void draw(){
   
   time_offset = 0;
   translate(100,100); // dx, dy
-DessineUneHorloge();
+  DessineUneHorloge();
   
   time_offset = -6;
   translate(200,0); // dx, dy
-DessineUneHorloge();
+  DessineUneHorloge();
 
   saveFrame("screenshot.png");
   
