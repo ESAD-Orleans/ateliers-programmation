@@ -27,5 +27,5 @@ void draw(){
   textSize(fontSize*.2);
   text(d,0,fontSize*.2*4);
   //
-  //saveFrame("f##.jpg");
+  saveFrame("screenshot.jpg");
 }
