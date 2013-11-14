@@ -6,6 +6,10 @@ float taille_des_heures = 30;
 float taille_des_minutes = 40;
 float taille_des_secondes = 60;
 
+String titre = "mon titre";
+//
+String[] nom_des_villes = {"Orléans","Berlin","Moscou","Tokyo","Los Angeles","New-York"};
+
 float time_offset = 0;
 
 color monGris = color(100,100,100);
@@ -32,8 +36,9 @@ void draw(){
   //
   translate(-50,100); // dx, dy
   
-  for(float h = 0; h < 6; h ++){
+  for(int h = 0; h < 6; h ++){
     //
+    titre = nom_des_villes[h];
     time_offset = h;
     // loop translations
     translate(150,0); // dx, dy
@@ -57,6 +62,9 @@ void DessineUneHorloge(){
   ellipse(0,0,100,100);// centerX, centerY, width, height
   //
   //
+  
+  textAlign(CENTER,CENTER);
+  text(titre,0,taille_des_secondes);
   //
   pushMatrix();
   rotate((time_offset+hour()+minute()/60.0)*TWO_PI/12); // angle radians  

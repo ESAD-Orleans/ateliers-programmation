@@ -1,21 +1,25 @@
-import java.util.Date;
-int fontSize = 80;
-PFont font = createFont("monaco",80);
-void setup(){
+import java.util.Date; // importe la library de Date
+//
+int fontSize = 80; // taille du corps de texte, variable (nombre entier) avec pour valeur 80
+PFont font = createFont("monaco",80); // créé une police de caractère
+//
+void setup(){ // initialisation du programme
   //
-  size(400,400);
+  size(400,400); // taille de la fenetre
   //
 }
-void draw(){
+void draw(){ // nouvelle frame
   //
   //
-  int paire = second()%2;
-  float ms = (new Date()).getTime()%60000;
-  float level = (sin(PI*ms/1000)+1)/2;
-  float level2 = (sin(2*PI*ms/1000-PI)+1)/2;
+  int paire = second() % 2; // déduit la seconde paire ou impaire
   //
-  background(paire*255);
-  fill(255-paire*255);
+  //float ms = (new Date()).getTime()%60000;
+  //float level = (sin(PI*ms/1000)+1)/2;
+  //float level2 = (sin(2*PI*ms/1000-PI)+1)/2;
+  //
+  background(paire*255); // arriere-plan
+  fill(255-paire*255); // couleur de texte
+  //
   translate(width/2,height/2);
   //
   String t = nf(hour(),2)+":"+nf(minute(),2)+":"+nf(second(),2);
