@@ -27,7 +27,7 @@ void draw(){
   float m = (d%3600000)/3600000.0;
   float h = (d%(12*3600000))/(12*3600000.0);
   //
-  ellipse(0,0,10,10);
+  //dessine la forme centrale
   //
   float st = 4;
   //
@@ -39,19 +39,22 @@ void draw(){
     float mms = pow(cos((max((ms-pos+1),0)-.25)*PI),10);
     float mmn = pow(cos((max((m-pos+1),0)-.25)*PI),20);
     float hh = pow(cos((max((h-pos+1),0)-.25)*PI),30);
+    // calcule la distance du point par rapport au centre
     float sSize = 20+mms*S_SIZE+ss*S_SIZE+mmn*50+hh*H_SIZE;
+    // ajoute un point à la forme
     vertex(cos(radians(n))*sSize,sin(radians(n))*sSize);
   }
   endShape();
   //
   //
+  // dessine les aiguilles
   rotate(-PI/2);
   stroke(255,255,0);
   strokeWeight(20);
   line(0,0,cos(h*TWO_PI)*H_SIZE/2,sin(h*TWO_PI)*H_SIZE/2);
   strokeWeight(10);
   stroke(0,255,255);
-  line(0,0,cos(mn*TWO_PI)*M_SIZE*2,sin(m*TWO_PI)*M_SIZE);
+  line(0,0,cos(m*TWO_PI)*M_SIZE*2,sin(m*TWO_PI)*M_SIZE);
   stroke(255,0,255);
   strokeWeight(5);
   line(0,0,cos(s*TWO_PI)*S_SIZE*2,sin(s*TWO_PI)*S_SIZE);
