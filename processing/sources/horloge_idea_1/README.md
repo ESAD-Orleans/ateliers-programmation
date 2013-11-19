@@ -80,7 +80,7 @@ L’affichage d'une image se fait en deux temps, 1. le chargement (dans la mémo
 
 la syntaxe minimum pour afficher une image est la suivante : 
 	 
-```processing	
+```java	
 // affiche une fenetre de 320x240 pixels
 size(320,240); 
 // charge une image dans la RAM 
@@ -94,7 +94,7 @@ image(monImage,0,0);
 
 pour commencer, pour l'instant nous allons afficher 2 images, pour afficher l'heure 18 et 00 
 
-```processing
+```java
 //
 size(640,240); // fenetre de 640x240 (pour 2 images en largeur)
 //
