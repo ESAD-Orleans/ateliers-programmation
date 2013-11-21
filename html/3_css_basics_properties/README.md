@@ -12,7 +12,7 @@ le pixel, noté `px` est la plus élémentaire de toutes et certainement la plus
 #### em (proportionnelle au texte)
 l’unité `em` est une unité qui se base sur la taille du corps de texte (font-size) ainsi, si ma balise a un corps de texte de 14px, 2em vaudra 28px. Ce principe s’hérite de balises parentes à enfantes :
 
-```
+```css
 body{
 	font-size :10px;
 }
@@ -21,7 +21,7 @@ div{
 }
 ```
 
-```
+```html
 <body>
 	niveau body
 	<div>
@@ -217,7 +217,7 @@ Certains attributs CSS (voir ci-dessus) on des notations raccourcis. Ce qui sign
 
 #### les raccourcis pour margin et padding
 
-```
+```css
 /* la notation raccourcie */
 margin : 0 5px 10px 8px;
 
@@ -235,7 +235,7 @@ l’ordre Top Right Bottom Left peut se retenir sur le modèle de l’horloge. U
 
 pour le cas de border, c’est un peu plus complexe, car il y a plusieurs niveaux de raccourcis. il y a la position de la bordure (top right bottom left) et le style, la couleur de la bordure
 
-```
+```css
 /* le raccourci */
 border: solid 1px #000;
 
