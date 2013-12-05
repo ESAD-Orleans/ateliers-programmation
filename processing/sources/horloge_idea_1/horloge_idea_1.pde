@@ -1,8 +1,7 @@
-//
-size(640,240); // fenetre de 640x240 (pour 2 images en largeur)
+import java.io.IOException;
 //
 // nous n'avons pas encore renommé les images JPEG
-String monChemin00 = "export/IMG_0831 copie.jpg"; // chemin du fichier image 00
+/*String monChemin00 = "export/IMG_0831 copie.jpg"; // chemin du fichier image 00
 String monChemin18 = "export/IMG_0824 copie.jpg"; // ceemin du fichier image 18
 //
 // je charge ma premiere image 18
@@ -20,4 +19,26 @@ translate(320,0);
 image(monImage00,0,0);
 //
 // je vais une sauvegarde de l'image
-saveFrame("screenshot.png");
+saveFrame("screenshot.png");*/
+//  
+String dossier = "export/";
+String typeDeFichier = ".jpg";
+
+void setup(){
+  //
+  size(640,240); // fenetre de 640x240 (pour 2 images en largeur)
+  
+}
+
+
+void draw(){
+  //
+  //
+    String fichierHeure = dossier + hour() + typeDeFichier;
+    //
+    //
+    PImage imageHeure  = loadImage(fichierHeure);
+    //
+    image(imageHeure,0,0);
+  //
+}
