@@ -43,16 +43,16 @@ img#logo{
 	float:left;
 }
 
-#menu{
+.menu{
 	float:left;
 	margin-top:260px;
 	margin-left:76px;
 }
 
-#menu li{
+.menu li{
 	float:left;
 	display:block;
-	background:#777;
+	background:#666;
 	margin-right:10px;
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:18px;
@@ -60,9 +60,33 @@ img#logo{
 	color:#fff;
 	line-height:35px;
 	padding:5px 8px 0 8px;
+
+	transition:all .5s;
+	-ms-transition:all .5s;
+	-moz-transition:all .5s;
+	-o-transition:all .5s;
+	-webkit-transition:all .5s;
+	opacity:0.5;
 }
 
-li#menu1{background-color:#088420;}
-li#menu2{background-color:#4397ab;}
-li#menu3{background-color:#ce5409;}
-li#menu4{background-color:#e09896;}
+li.menu1{background-color:#088420;}
+li.menu2{background-color:#4397ab;}
+li.menu3{background-color:#ce5409;}
+li.menu4{background-color:#e09896;}
+
+li.selected{
+	color:#fff;
+}
+
+li:hover{
+	background:rgba(0,0,0,.1);
+	color:rgba(255,255,255,1);
+	font-size:30px;
+	line-height:40px;
+}
+
+/*
+li:hover{
+	background-color:#000 !important;
+}
+*/
