@@ -66,7 +66,6 @@ img#logo{
 	-moz-transition:all .5s;
 	-o-transition:all .5s;
 	-webkit-transition:all .5s;
-	opacity:0.5;
 }
 
 li.menu1{background-color:#088420;}
@@ -79,10 +78,49 @@ li.selected{
 }
 
 li:hover{
-	background:rgba(0,0,0,.1);
+	background:rgba(0,0,0,.5);
 	color:rgba(255,255,255,1);
 	font-size:30px;
 	line-height:40px;
+}
+
+.contenu{
+	padding: 60px;
+}
+
+h1{
+	color:#ce5409;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-weight:normal;
+	font-size:48px;
+	letter-spacing: 0.08em;
+	line-height: 60px;
+	display:inline;
+	top:-10px;
+	position:relative;
+	margin:0 0 10px 0;
+}
+
+p{
+	margin:0 0 30px 0;
+	color:#252525;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:24px;
+	letter-spacing: 0.08em;
+	line-height: 30px;
+}
+
+.ecarteur{
+	display:inline;
+	float:left;
+	height:10px;
+	width:540px;
+}
+
+.article-image{
+	float:left;
+	margin-right: 20px;
+	margin-bottom:20px;
 }
 
 /*
